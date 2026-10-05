@@ -1,0 +1,27 @@
+{
+  "name": "headless-media-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Headless Media SDK and Component Library Take-Home Monorepo",
+  "workspaces": [
+    "packages/media-core",
+    "packages/media-react",
+    "packages/media-ui-react",
+    "app"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "dev": "npm run dev --workspace=app"
+  },
+  "keywords": [
+    "headless",
+    "media",
+    "sdk",
+    "react",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+

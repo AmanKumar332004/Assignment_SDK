@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@headless-media/core": ["packages/media-core/src/index.ts"],
+      "@headless-media/react": ["packages/media-react/src/index.ts"],
+      "@headless-media/ui-react": ["packages/media-ui-react/src/index.ts"]
+    }
+  },
+  "references": [
+    { "path": "./packages/media-core" },
+    { "path": "./packages/media-react" },
+    { "path": "./packages/media-ui-react" },
+    { "path": "./app" }
+  ]
+}
+
